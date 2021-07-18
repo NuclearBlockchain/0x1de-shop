@@ -10,4 +10,6 @@ yarn prestart
 echo "Building 'web'..."
 # TODO: fix linting errors!
 CI=false && yarn build
-echo "#done"
+echo "Deploying web ..."
+firebase deploy --only hosting
+echo "Done"
